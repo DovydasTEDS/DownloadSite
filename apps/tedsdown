@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ -z "$1" ] && [ -z "$2" ]; then
+ echo "Usage: tedsdown [filename] [url]"
+else
+ wget -O ~/Downloads/$1 $2
+fi
